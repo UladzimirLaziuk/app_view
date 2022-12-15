@@ -1,3 +1,4 @@
 db.sqlite3
 app/migrations
 app/static
+app_view/app_view/__pycache__/*
