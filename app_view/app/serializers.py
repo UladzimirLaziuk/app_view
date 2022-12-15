@@ -42,6 +42,4 @@ class ProgramModelSerializer(serializers.ModelSerializer):
                  'image', 'gotolink','products_xml_link', 'regions', 'categories', 'traffics', 'actions'
 
 
-    def create(self, validated_data):
 
-        return super().create(validated_data)

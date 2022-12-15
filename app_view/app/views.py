@@ -1,5 +1,4 @@
 from django.db.models import Q
-from django.shortcuts import render
 from django.views.generic import ListView, DetailView
 
 from app.models import ProgramModel, Score
@@ -13,10 +12,7 @@ class CreateModel(CreateAPIView):
     queryset = ProgramModel.objects.all()
     serializer_class = ProgramModelSerializer
 
-    def post(self, request, *args, **kwargs):
 
-        print(request)
-        return super().post(request, *args, **kwargs)
 
 class ScoreListView(ListView):
     template_name = 'score.html'
